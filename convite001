@@ -1,0 +1,54 @@
+- 👋 Hi, I’m @Caedu3
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+Caedu3/Caedu3 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+<p> Você está convocada para uma festa do pijama particular em minha casa </p>
+<button id="change"> Não </button>
+<button class="hidden" id="move"> Não </button>
+
+
+p{
+	font-size: 30px;
+	font-weight: bold;
+}
+button{
+	background-color: black;
+	color: white
+}
+button{
+	background-color: black;
+	color: white;
+	width: 100px;
+	position: absolute;
+}
+.hidden{
+	display: none;
+}
+#move{
+	left:200px;
+}
+#change: hover {
+	cursor:pointer;
+	
+}
+
+$("#change").click(function(){
+	$("#change").html("Sim");
+	$("#move").show();
+});
+
+$("#move").hover(function(){
+	change();
+});
+
+function change()
+{
+	var i = Math.floor(Math.random()*500)+1;
+	var j = Math.floor(Math.random()*100)+1;
+	$("#move").css({top: j+'px',left:       i+'px'});
